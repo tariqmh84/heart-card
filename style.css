@@ -1,0 +1,178 @@
+/* CORE STYLES */
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(24, 39, 51 , 0.85);
+  --menu-speed: 0.75s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+.wrapper{
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 30px;
+  height: 600px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.heart{
+background-color: red;
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+transform: rotate(45deg);
+position: relative;
+}
+
+.heart::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50px);
+}
+
+.heart::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-25px, -25px);
+}
+
+.heart2{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    transform: rotate(45deg);
+  }
+  
+  .heart2::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-30px);
+  }
+  
+  .heart2::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-15px, -15px);
+  
+  }
+  .heart3{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    transform: rotate(45deg);
+  }
+  
+  .heart3::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translate(0px, 15px);
+  }
+  
+  .heart3::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(0);
+  
+  }
+  .a{
+    display: flex;
+     position: absolute;
+    top: -60px;
+    left: -45px; 
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: 900;
+    font-size: 3rem;
+    color: red;
+    transform: rotate(-45deg);
+  }
+  .a2{
+    display: flex;
+     position: absolute;
+    bottom: -60px;
+    right: -45px; 
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: 900;
+    font-size: 3rem;
+    color: red;
+    transform: rotate(135deg);
+  }
